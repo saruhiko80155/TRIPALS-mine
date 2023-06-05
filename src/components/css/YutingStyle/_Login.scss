@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@800&display=swap");
+
+@media screen and (max-width: 1440px) {
+  #LoginPage {
+    max-width: 20rem;
+    // max-height: 25rem;
+  }
+}
+#checkLabel {
+  color: red;
+}
+$blueGreen: #b2d5ce;
+
+// body {
+//   margin: 0;
+//   background-color: #91c295;
+//   font-family: "Sen", sans-serif;
+// }
+
+.page {
+  width: 100%;
+  height: 100vh;
+  #LoginPage,
+  #RegisterPage {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    align-items: center;
+    padding: 2.5rem;
+    max-width: 30rem;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    height: fit-content;
+    width: 100%;
+    h1 {
+      font-weight: bold;
+    }
+
+    input[type="button"] {
+      display: block;
+      margin: 0 auto;
+      display: flex;
+      width: 50%;
+      height: 35px;
+      border-radius: 20px;
+      justify-content: center;
+      background-color: white;
+      font-size: 1rem;
+      border: 1px solid $blueGreen;
+      margin-top: 15px;
+
+      &:active {
+        background-color: #92b9b4;
+      }
+
+      &:hover {
+        background-color: #e3f1ef;
+      }
+    }
+
+    #hrOr {
+      display: flex;
+      align-items: center;
+      height: 0.5px;
+      margin: 20px;
+      background-color: black;
+      border: none;
+      margin-top: 2rem;
+
+      p {
+        background-color: white;
+      }
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      margin-top: 2rem;
+
+      label {
+        font-size: 1rem;
+      }
+
+      input {
+        position: relative;
+        margin: 0 auto;
+        font-size: 1rem;
+        width: 60%;
+        padding-left: 1rem;
+        border: 1.5px $Green solid;
+        border-radius: 50px;
+        padding-left: 1rem;
+
+        &:hover,
+        &:focus {
+          border: 1.5px $Green solid;
+          border-radius: 50px;
+          padding-left: 1rem;
+        }
+      }
+
+      button {
+        padding: 0.25rem 0.85rem;
+        border-radius: 50px;
+        border: $ButtonColor 2px solid;
+        background: $ButtonColor;
+        color: $HoverBg;
+        width: 30%;
+        margin: 1rem auto;
+
+        &:hover {
+          color: $ButtonColor;
+          background: $HoverBg;
+          border: $ButtonColor 2px solid;
+        }
+      }
+
+      a {
+        font-size: 1rem;
+        color: $blueGreen;
+      }
+      span {
+        color: red;
+        font-size: 0.75rem;
+        height: 1rem;
+      }
+    }
+  }
+}

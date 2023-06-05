@@ -1,0 +1,64 @@
+@import "../../_share";
+
+// nav
+.edit-bar {
+	background-color: $colorRice;
+	padding: 1rem;
+	.edit-add-location-btn {
+		@include edit-btn(#f68d51);
+	}
+	.edit-draft-btn {
+		@include edit-btn(#00563b); //00563B //65c6c6
+	}
+	.edit-show-btn {
+		@include edit-btn(#fab10c);
+	}
+	.edit-delete-btn {
+		@include edit-btn(#ff4848);
+	}
+	.image-box {
+		width: 3rem;
+		height: 3rem;
+		margin-left: 0.5rem;
+		border-radius: 50%;
+		overflow: hidden;
+		.edit-user-image {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	box-shadow: 0 2px 10px 2px rgba(0, 0, 0, 0.2);
+	.edit-dropdown-toggle {
+		padding: 0;
+		&::after {
+			content: none;
+		}
+	}
+	.edit-dropdown-menu {
+		position: absolute;
+		padding: 2rem;
+		left: -160px;
+
+		@media (max-width: 991px) {
+			margin-left: 1rem;
+			padding: 0.5rem;
+		}
+
+		a {
+			font-family: "sen";
+			font-style: normal;
+			font-size: 1.5rem;
+			color: #181818;
+		}
+
+		.edit-dropdown-item:hover {
+			background-color: transparent;
+		}
+
+		.edit-dropdown-item:focus,
+		.edit-dropdown-item.active {
+			color: #9faf7d;
+		}
+	}
+}

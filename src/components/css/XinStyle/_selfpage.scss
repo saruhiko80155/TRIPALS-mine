@@ -1,0 +1,62 @@
+body {
+  background-color: $Rice;
+
+  /* 個人首圖 + username - 個人封面 */
+  section.selftop {
+    margin-top: 5rem;
+    height: 55vh;
+    background-size: cover;
+    overflow: hidden;
+    clip-path: ellipse(75% 50% at 50% 30%); //-----> 我改了這裡
+    //          左右放大 上下放大 at 垂直中心軸 水平中心軸
+    position: relative;
+
+    img.selfCover {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: bottom;
+    }
+
+    div.selfMessage {
+      position: absolute;
+      height: fit-content;
+      width: fit-content;
+      left: 8%;
+      bottom: 30%;
+      display: flex;
+      align-items: center;
+
+      img.selfShot {
+        width: 11vw;
+        height: 11vw;
+        min-width: 75px;
+        min-height: 75px;
+        max-width: 110px;
+        max-height: 110px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 1rem;
+        border: 2px $white solid;
+      }
+
+      h4.userName {
+        color: $white;
+        text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.5);
+        // font-weight: ;
+        font-size: 2rem;
+      }
+    }
+  }
+
+  div {
+    section.selfIntroduce {
+      p.intro {
+        text-align: center;
+        padding: 0 5rem;
+        font-size: 1.5rem;
+        font-weight: 800;
+      }
+    }
+  }
+}
