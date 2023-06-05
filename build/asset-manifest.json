@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d812f11b.css",
+    "main.js": "/static/js/main.7dbbd88e.js",
+    "static/media/raiway.jpg": "/static/media/raiway.92570ad8c1668d9e588b.jpg",
+    "static/media/grass.jpg": "/static/media/grass.a5766396d752ae0944e8.jpg",
+    "static/media/marker2.svg": "/static/media/marker2.22ae5fb5f38186296410762360e5ef7f.svg",
+    "index.html": "/index.html",
+    "main.d812f11b.css.map": "/static/css/main.d812f11b.css.map",
+    "main.7dbbd88e.js.map": "/static/js/main.7dbbd88e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d812f11b.css",
+    "static/js/main.7dbbd88e.js"
+  ]
+}
