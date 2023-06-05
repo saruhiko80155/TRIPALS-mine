@@ -13,7 +13,7 @@ const Navigation = ({ currentUser, setCurrentUser, avatarImg, setavatarImg }) =>
 
 	const history = useHistory();
 	const swaAlert = useSwaAlert();
-	let url = 'http://localhost:8000';
+	const url = 'http://localhost:8000';
 
 	useEffect(() => {
 		const handleNavMouseOver = (event) => {
